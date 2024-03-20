@@ -22,16 +22,19 @@ body{
   width: 100%;
 }
 .contain {
-  margin-bottom: 3rem;
+  width: 90%;
+  margin: 0 auto 2rem;
 }
 .contain-text-encriptar {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 .insert-text {
-  width: 95%;
-  height: 35vh;
+  max-width: 100%;
+  
+  min-height: 50vh;
   margin: 1.5rem auto;
   padding: 1rem;
   border: none;
@@ -46,10 +49,9 @@ body{
 }
 
 .info-text {
-  width: 20rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 0 0 1rem;
   color: #67808e;
 }
 .contain-btn {
@@ -62,10 +64,12 @@ body{
 /* ------------Estilos para todos los botones ---------- */
 button {
   height: 4rem;
-  min-width: 90%;
+  width: 100%;
+  max-width: 22rem;
   background: #fff;
   border: 1px solid #0a3871;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
   &:active{
     background: #204a7d;
   }
@@ -92,8 +96,9 @@ button {
   margin: 1.5rem 0;
   padding: 1.5rem;
   background: #fff;
-  border: 1px solid #67808e;
+  /* border: 1px solid #67808e; */
   border-radius: 1.5rem;
+  box-shadow: 0 2rem 2rem -8px #0000002c ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,10 +110,11 @@ button {
 }
 .text-desencriptado {
   color: #67808e;
+  font-size: 1.2rem;
   text-align: center;
   span{
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .btn-copy-desencriptado{
@@ -116,4 +122,61 @@ button {
 }
 .active{
   display: none;
+}
+.contain-desencriptado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.contain-desencriptado {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------ ESTILOS PARA TABLED  ---------- */
+
+@media screen and (min-width: 760px){
+  .contain-btn {
+  flex-direction: row;
+  justify-content: center;
+}
+  .contain-text-encriptar {
+  margin: 3rem 0;
+  }
+}
+
+
+
+/* ------------ ESTILOS PARA PC ---------- */
+@media screen and (min-width:1440px) {
+  .contain{
+    display: flex;
+    justify-content:flex-end;
+  }
+  .container-img{
+    display: inline-block;
+  }
+  .contain-text-encriptar{
+    width: 60%;
+  }
+  .contain-info-text{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .insert-text{
+    max-width: 90%;
+    max-height: 33rem;
+  }
+  .contain-desencriptado{
+    width: 25%;
+    height: 85vh;
+  } 
+  .contain-text-desencriptado{
+    height: 100%;
+  }
+  .container-img svg{
+    width: 100%;
+  }
 }

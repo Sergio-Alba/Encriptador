@@ -61,8 +61,8 @@
             </h2>
           </div>
           <div class="contain-btn">
-            <button class="btn-encriptar" type="button">Encriptar</button>
-            <button class="btn-desencriptar" type="button">Desencriptar</button>
+            <button id="btn-encriptar" class="btn-encriptar" type="button">Encriptar</button>
+            <button id="btn-desencriptar" class="btn-desencriptar" type="button">Desencriptar</button>
           </div>
         </section>
         <section class="contain-desencriptado">
@@ -612,11 +612,11 @@
               </svg>
             </div>
             <!-- Aquí se vera el texto encriptado o desencriptado dependiendo de lo que el usuario realice -->
-            <p class="text-desencriptado">
+            <p class="text-desencriptado" id="text-desencriptado">
               <span>Ningún mensaje fue encontrado</span><br>Ingresa el texto que
               desees encriptar o desencriptar.
             </p>
-            <button class="btn-copy-desencriptado" type="button">Copiar</button>
+            <button id="btn-copy" class="btn-copy-desencriptado" type="button">Copiar</button>
           </div>
         </section>
       </section>
